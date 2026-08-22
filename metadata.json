@@ -1,0 +1,30 @@
+{
+  "project_name": "Africa Code Assistant",
+  "team_name": "RIA Team",
+  "track": "Coding Assistants",
+  "submission_date": "2026-08-24",
+  "repo_url": "REPLACE_WITH_YOUR_PUBLIC_GITHUB_REPO_URL",
+  "description": "A fully offline desktop coding assistant for African developers and students, providing code generation, explanation, debugging, optimization, and translation across multiple programming languages, plus offline documentation search (RAG) and UI support for Hausa, Yoruba, and Igbo. Built for low-connectivity environments and budget hardware (8GB RAM, no GPU).",
+  "model": {
+    "name": "Qwen2.5-Coder-3B-Instruct",
+    "quantization": "Q4_0 (GGUF)",
+    "runtime": "llama.cpp",
+    "size_gb": 3.3
+  },
+  "languages_supported": ["English", "Hausa", "Yoruba", "Igbo"],
+  "hardware_requirements": {
+    "min_ram_gb": 8,
+    "gpu_required": false
+  },
+  "offline": true,
+  "test_prompts": [
+    {
+      "prompt": "Write a Python function that add two numbers.",
+      "expected_behavior": "Returns a correct, runnable Python function that add two numbers"
+    },
+    {
+      "prompt": "Write a Python function that add two numbers in PHP,java and javascript.",
+      "expected_behavior": "Returns a clear result displayed in PHP,java and javascript."
+    }
+  ]
+}

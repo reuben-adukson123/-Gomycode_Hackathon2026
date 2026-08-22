@@ -1,8 +1,5 @@
-
-
-```gitignore
-# Models (too large for GitHub)
-models/
+# Model (downloaded by download_model.sh, not committed)
+model/
 *.gguf
 *.bin
 
@@ -43,7 +40,7 @@ Thumbs.db
 config.json
 .env
 
-# RAG Index (large)
+# RAG index (large)
 resources/docs/rag_index.pkl
 resources/docs/rag_index.faiss
 resources/docs/documents.pkl
