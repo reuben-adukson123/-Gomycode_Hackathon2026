@@ -3,7 +3,7 @@
     "theme": "darkly"
   },
   "language": "en",
-  "model_path": "./models/qwen-coder-3b-q4/model-q4_0.gguf",
+  "model_path": "./model/qwen-coder-3b-q4/model-q4_0.gguf",
   "docs_path": "./resources/docs",
   "llm": {
     "context_length": 4096,
