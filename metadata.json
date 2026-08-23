@@ -1,30 +1,37 @@
 {
-  "project_name": "Africa Code Assistant",
-  "team_name": "RIA Team",
-  "track": "Coding Assistants",
-  "submission_date": "2026-08-24",
-  "repo_url": "REPLACE_WITH_YOUR_PUBLIC_GITHUB_REPO_URL",
-  "description": "A fully offline desktop coding assistant for African developers and students, providing code generation, explanation, debugging, optimization, and translation across multiple programming languages, plus offline documentation search (RAG) and UI support for Hausa, Yoruba, and Igbo. Built for low-connectivity environments and budget hardware (8GB RAM, no GPU).",
-  "model": {
-    "name": "Qwen2.5-Coder-3B-Instruct",
-    "quantization": "Q4_0 (GGUF)",
-    "runtime": "llama.cpp",
-    "size_gb": 3.3
+  "team_id": "ria-team",
+  "domain": "coding_assistants",
+  "language_scope": ["en", "ha", "yo", "ig"],
+  "african_alpha_claim": false,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "Adukwu Reuben",
+    "email": "adukwudegreat@gmail.com",
+    "github_handle": "reuben-adukson123"
   },
-  "languages_supported": ["English", "Hausa", "Yoruba", "Igbo"],
-  "hardware_requirements": {
-    "min_ram_gb": 8,
-    "gpu_required": false
+  "cross_disciplinary_pairing": {
+    "discipline": "education",
+    "load_bearing": true,
+    "description": "Provides offline coding tutoring, debugging, and code explanation for African students and developers with limited or no internet access."
   },
-  "offline": true,
   "test_prompts": [
     {
-      "prompt": "Write a Python function that add two numbers.",
-      "expected_behavior": "Returns a correct, runnable Python function that add two numbers"
+      "prompt_id": "tp_001",
+      "prompt": "Write a Python function that adds two numbers."
     },
     {
-      "prompt": "Write a Python function that add two numbers in PHP,java and javascript.",
-      "expected_behavior": "Returns a clear result displayed in PHP,java and javascript."
+      "prompt_id": "tp_002",
+      "prompt": "Write a function that adds two numbers in PHP, Java, and JavaScript."
     }
-  ]
+  ],
+  "model": {
+    "name": "Qwen2.5-Coder-3B-Instruct-Q4_0",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF Q4_0",
+    "parameters_estimate": "3B",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "model/qwen-coder-3b-q4/model-q4_0.gguf"
+  }
 }
