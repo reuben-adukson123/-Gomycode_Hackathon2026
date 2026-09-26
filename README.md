@@ -2,10 +2,6 @@
 
 **Offline AI Coding Assistant for African Developers**
 
-[![ADTC 2026](https://img.shields.io/badge/ADTC-2026-blue)](https://africadeeptech.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
-
----
 
 ## 🌍 Overview
 
